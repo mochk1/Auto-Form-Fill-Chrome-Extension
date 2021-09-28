@@ -1,0 +1,26 @@
+
+{
+	"manifest_version": 2,
+	"name": "Safeschool",
+	"description": "Safeschool Form Extension",
+	"version": "1.0.0",
+	"permissions": [
+		"activeTab",
+        "storage"
+	],
+	"browser_action": { 
+		"default_icon": "logo.png",
+		"default_popup": "popup.html" 
+	},
+	"icons": { "128": "logo.png"}, 
+    "content_scripts": [
+        {
+          "matches": ["http://www.google.com/*"],
+          "css": ["style.css"],
+          "js": ["jquery.min.js", "xlsx.js","jszip.js","content.js"]
+        }
+      ],
+      "background":{
+          "scripts":["script.js"]
+      } 
+}

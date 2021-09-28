@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; manifest-src 'self'">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safeschool Form Automation</title>
+    
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+
+
+<div class="main">
+  <div id="img">
+<img src="title.JPG" alt="logo">
+</div>
+
+<div class="form">
+<form enctype="multipart/form-data">
+    <input id="upload" type=file  name="files[]">
+</form>
+</div>
+<div class="textarea">
+    <textarea class="form-control" rows=15 cols=40 id="xlx_json"></textarea>
+  </div>
+    <div>
+        <button  id="addbtn">Add To Form</button>
+    </div>
+  </div>
+  <script src="/jquery.min.js"></script>
+  <script src="/jszip.js"></script>
+  <script src="/xlsx.js"></script>
+  <script src="/xlfunc.js"></script>
+<script src="/script.js"></script>
+
+    
+</body>
+</html>
